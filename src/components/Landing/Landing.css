@@ -20,9 +20,9 @@
   transform: translateX(-50%);
   width: var(--img-size);
   height: var(--img-size);
-  object-fit: cover;
+  object-fit:cover;
   border-radius: 50%;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 30px rgba(200, 183, 183, 0.2);
   transition: opacity 0.3s;
 }
 
@@ -72,7 +72,7 @@
 .lcr--content h6 {
   font-weight: 500;
   font-size: 1.25rem;
-  margin-bottom: -0.85rem;
+  margin-bottom: -0.20rem;
   opacity: 0.8;
 }
 
@@ -98,6 +98,27 @@
   justify-content: space-between;
   font-family: "var(--primaryFont)", sans-serif;
 }
+
+.hand {
+  font-size: 2.;
+  animation-name: wave-animation;  
+  animation-duration: 2.5s;        
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;       
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) } 
+  100% { transform: rotate( 0.0deg) }
+}
+
 
 @media (max-width: 1100px) {
   .landing--img {
@@ -141,7 +162,7 @@
   }
   .lcr--content {
     width: 60%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-right: 6%;
   }
 
@@ -201,11 +222,18 @@
     font-size: 2.5rem;
     text-align: center;
   }
+  .lcr--content h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
   .lcr--content p {
     font-size: 0.95rem;
     text-align: center;
     margin: 0 auto;
     width: 90%;
+    margin-top: 5px;
   }
   .lcr-buttonContainer {
     margin: 0 auto;
@@ -220,12 +248,12 @@
 
 @media (max-width: 500px) {
   .lcr--content {
-    margin-top: 35%;
+    margin-top: 50%;
   }
 }
 @media (max-width: 370px) {
   .lcr--content {
-    margin-top: 60%;
+    margin-top: 30%;
   }
 }
 
@@ -236,7 +264,7 @@
 
   .landing--img {
     --img-size: 150px;
-    left: 50%;
+    left: 30%;
     top: 20%;
   }
 }
