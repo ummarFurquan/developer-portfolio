@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Fade from "react-reveal/Fade";
-import Tilt from "react-parallax-tilt";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
 import { AiOutlineFolder } from "react-icons/ai";
@@ -23,9 +22,7 @@ function AchievementCard({ id, title, details, date, field, image }) {
   const classes = useStyles();
   return (
     <Fade bottom>
-      <Tilt
-        glareEnable={true} glareMaxOpacity={0.5} glareColor="white" glarePosition="top" glareBorderRadius="10px" 
-      >
+      
         <div key={id} className={`achievement-card ${classes.achievementCard}`} style={{backgroundColor:'#28282B'}}>
           <div className="achievecard-content">
             <div className="achievecard-details1">
@@ -47,7 +44,6 @@ function AchievementCard({ id, title, details, date, field, image }) {
             <img src={image} alt="" />
           </div>
         </div>
-      </Tilt>
     </Fade>
   );
 }
