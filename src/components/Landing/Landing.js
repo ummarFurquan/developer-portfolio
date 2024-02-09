@@ -72,14 +72,13 @@ function Landing() {
       <div className="landing--container">
         <div
           className="landing--container-left"
-          style={{ backgroundColor: theme.primary }}
         >
           <div className="lcl--content">
             {socialsData.linkedIn && (
               <a href={socialsData.linkedIn} target="_blank" rel="noreferrer">
                 <FaLinkedin
                   className="landing--social"
-                  style={{ color: theme.secondary }}
+                  style={{color:'black'}}
                   aria-label="LinkedIn"
                 />
               </a>
@@ -88,7 +87,7 @@ function Landing() {
               <a href={socialsData.github} target="_blank" rel="noreferrer">
                 <FaGithub
                   className="landing--social"
-                  style={{ color: theme.secondary }}
+                  style={{color:'black'}}
                   aria-label="GitHub"
                 />
               </a>
@@ -97,7 +96,7 @@ function Landing() {
               <a href={socialsData.twitter} target="_blank" rel="noreferrer">
                 <FaTwitter
                   className="landing--social"
-                  style={{ color: theme.secondary }}
+                  style={{color:'black'}}
                   aria-label="Twitter"
                 />
               </a>
@@ -106,7 +105,7 @@ function Landing() {
               <a href={socialsData.youtube} target="_blank" rel="noreferrer">
                 <FaYoutube
                   className="landing--social"
-                  style={{ color: theme.secondary }}
+                  style={{color:'black'}}
                   aria-label="YouTube"
                 />
               </a>
@@ -115,16 +114,17 @@ function Landing() {
               <a href={socialsData.blogger} target="_blank" rel="noreferrer">
                 <FaBlogger
                   className="landing--social"
-                  style={{ color: theme.secondary }}
+                  style={{color:'black'}}
                   aria-label="Blogger"
                 />
               </a>
             )}
           </div>
         </div>
+
         <img
           src={headerData.image}
-          alt=""
+          alt="Atisha"
           className="landing--img"
           style={{
             opacity: `${drawerOpen ? "0" : "1"}`,
@@ -136,7 +136,7 @@ function Landing() {
           style={{ backgroundColor: theme.secondary }}
         >
           <div className="lcr--content" style={{ color: theme.tertiary }}>
-            <h2>Hello <span className="hand">👋</span> I am,</h2>
+            <h2>Hello I am,</h2>
             <h1>{headerData.name}</h1>
             <h6>I am a Data Analyst </h6>
             <p>{headerData.desciption}</p>
