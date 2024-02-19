@@ -133,8 +133,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar--container">
-        <h1>{shortname(headerData.name)}</h1>
-
+        <h1 style={{ color: 'black' }}>{shortname(headerData.name)}</h1>
         <IoMenuSharp
           className={classes.navMenu}
           onClick={handleDrawerOpen}

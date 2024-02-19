@@ -68,18 +68,21 @@ function Landing() {
   const classes = useStyles();
 
   return (
+    <>
     <div className="landing">
+    
       <div className="landing--container">
         <div
           className="landing--container-left"
+          style={{backgroundColor:'#f5f5dc'}}
         >
           <div className="lcl--content">
             {socialsData.linkedIn && (
               <a href={socialsData.linkedIn} target="_blank" rel="noreferrer">
                 <FaLinkedin
                   className="landing--social"
-                  style={{color:'black'}}
                   aria-label="LinkedIn"
+                  style={{ color: 'black'}}
                 />
               </a>
             )}
@@ -87,7 +90,7 @@ function Landing() {
               <a href={socialsData.github} target="_blank" rel="noreferrer">
                 <FaGithub
                   className="landing--social"
-                  style={{color:'black'}}
+                  style={{ color: 'black'}}
                   aria-label="GitHub"
                 />
               </a>
@@ -96,7 +99,7 @@ function Landing() {
               <a href={socialsData.twitter} target="_blank" rel="noreferrer">
                 <FaTwitter
                   className="landing--social"
-                  style={{color:'black'}}
+                  style={{ color: 'black'}}
                   aria-label="Twitter"
                 />
               </a>
@@ -105,7 +108,7 @@ function Landing() {
               <a href={socialsData.youtube} target="_blank" rel="noreferrer">
                 <FaYoutube
                   className="landing--social"
-                  style={{color:'black'}}
+                  style={{ color: 'black'}}
                   aria-label="YouTube"
                 />
               </a>
@@ -114,7 +117,7 @@ function Landing() {
               <a href={socialsData.blogger} target="_blank" rel="noreferrer">
                 <FaBlogger
                   className="landing--social"
-                  style={{color:'black'}}
+                  style={{ color: 'black'}}
                   aria-label="Blogger"
                 />
               </a>
@@ -160,6 +163,7 @@ function Landing() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 
+
 import expImgWhite from '../../assets/svg/experience/expImgWhite.svg'
 import expImgBlack from '../../assets/svg/experience/expImgBlack.svg'
 
@@ -26,6 +27,8 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
 
 
     return (
+        <>
+        
         <Fade bottom>
             <div key={id} className={`experience-card ${classes.experienceCard}`}>
                 <div className="expcard-img" style={{backgroundColor: theme.primary}}>
@@ -38,6 +41,7 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
                 </div>
             </div>
         </Fade>   
+        </>
     )
 }
 

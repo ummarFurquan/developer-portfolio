@@ -59,7 +59,7 @@ export const bwThemeLight = {
     primary80: '#000000cc',
     primary50: '#00000080',
     primary30: '#0000004d',
-    secondary: '#EAEAEA',
+    secondary: '#F5F5DC', // Beige background color
     secondary70: '#EAEAEAb3',
     secondary50: '#EAEAEA80',
     tertiary: '#212121',
@@ -72,6 +72,7 @@ export const bwThemeLight = {
     expimg: expBlack,
     contactsimg: contactsBlack
 }
+
 export const bwThemeDark = {
     type: 'dark',
     primary: '#B6B6B6',
