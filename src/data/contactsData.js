@@ -1,6 +1,6 @@
 export const contactsData = {
-    email: 'janedoe.test@gmail.com',
-    phone: '+915588776600',
-    address: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quibusdam maiores, ',
+    email: 'ar1710@georgetown.edu',
+    phone: '(571) 351-3630',
+    address: 'Washington D.C',
     sheetAPI: process.env.REACT_APP_SHEET_API,
 }

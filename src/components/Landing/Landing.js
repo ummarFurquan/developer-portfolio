@@ -11,9 +11,7 @@ import { socialsData } from "../../data/socialsData";
 import {
   FaTwitter,
   FaLinkedin,
-  FaGithub,
-  FaYoutube,
-  FaBlogger,
+  FaGithub
 } from "react-icons/fa";
 
 function Landing() {
@@ -104,24 +102,8 @@ function Landing() {
                 />
               </a>
             )}
-            {socialsData.youtube && (
-              <a href={socialsData.youtube} target="_blank" rel="noreferrer">
-                <FaYoutube
-                  className="landing--social"
-                  style={{ color: 'black'}}
-                  aria-label="YouTube"
-                />
-              </a>
-            )}
-            {socialsData.blogger && (
-              <a href={socialsData.blogger} target="_blank" rel="noreferrer">
-                <FaBlogger
-                  className="landing--social"
-                  style={{ color: 'black'}}
-                  aria-label="Blogger"
-                />
-              </a>
-            )}
+            
+            
           </div>
         </div>
 
