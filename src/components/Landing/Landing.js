@@ -18,7 +18,7 @@ function Landing() {
   const { theme, drawerOpen } = useContext(ThemeContext);
 
   const useStyles = makeStyles((t) => ({
-    contactBtn: {
+    resumeBtn: {
       color: theme.primary,
       borderRadius: "30px",
       textTransform: "inherit",
@@ -39,7 +39,7 @@ function Landing() {
         width: "180px",
       },
     },
-    resumeBtn: {
+     contactBtn: {
       backgroundColor: theme.primary,
       color: theme.secondary,
       borderRadius: "30px",
