@@ -72,7 +72,7 @@ function Landing() {
       <div className="landing--container">
         <div
           className="landing--container-left"
-          style={{backgroundColor:'#f5f5dc'}}
+          style={{backgroundColor:'#faf0e6'}}
         >
           <div className="lcl--content">
             {socialsData.linkedIn && (
@@ -101,12 +101,9 @@ function Landing() {
                   aria-label="Twitter"
                 />
               </a>
-            )}
-            
-            
+            )} 
           </div>
         </div>
-
         <img
           src={headerData.image}
           alt="Atisha"
