@@ -22,9 +22,6 @@ function Navbar() {
   const handleDrawerOpen = () => {
     setOpen(true);
     setHandleDrawer();
-    if (typeof window != 'undefined' && window.document) {
-      document.body.style.overflow = 'hidden';
-    }
   };
 
   const handleDrawerClose = () => {
@@ -179,7 +176,7 @@ function Navbar() {
         <div onClick={handleDrawerClose}>
           <div className="navLink--container">
             <Fade left>
-              <NavLink to="/" smooth={true} spy="true" duration={2000}>
+              <NavLink to="/" smooth={true} spy="true" duration={1000}>
                 <div className={classes.drawerItem}>
                   <IoHomeSharp className={classes.drawerIcon} />
                   <span className={classes.drawerLinks}>Home</span>
