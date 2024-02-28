@@ -8,6 +8,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    color: hsla(117, 56%, 49%, 0.702);
+
 }
 
 .experience-description {
@@ -16,15 +18,17 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    margin-right: 2rem;
+    align-items: center;
+    justify-content: left;
 }
 
 .experience-description > h1 {
     font-size: 3.5rem;
     font-family: var(--primaryFont);
     margin-bottom: 2rem;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
 }
 
 .experience-card {
@@ -78,14 +82,14 @@
     font-weight: 600;
 }
 
-.experience-image {
+/* .experience-image {
     box-sizing: border-box;
     padding: 1rem;
     flex: 0.35;
     margin-left: 7%;
     margin-top: 1rem;
     pointer-events: none;
-}
+} */
 
 .experience-image > img {
     width: 100%;

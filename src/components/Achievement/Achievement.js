@@ -1,5 +1,4 @@
-import React, { useContext} from 'react';
-
+import React, { useContext } from 'react';
 import './Achievement.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { achievementData } from '../../data/achievementData'
@@ -20,18 +19,8 @@ function Achievement() {
                         {achievementData.achievements.map((achieve, index) => ( 
                             <AchievementCard 
                                 key={index}
-                                id={achieve.id}
-                                certificates={[
-                                    achieve.certificate1,
-                                    achieve.certificate2,
-                                    achieve.certificate3,
-                                    achieve.certificate4,
-                                    achieve.certificate5,
-                                    achieve.certificate6,
-                                    achieve.certificate7,
-                                    achieve.certificate8,
-                                    achieve.certiicate9
-                                ]}
+                                certificate={achieve.name}
+                                description={achieve.desc}
                             />
                         ))}
                     </div>
@@ -41,5 +30,4 @@ function Achievement() {
     )
 }
 
-
-export default Achievement
+export default Achievement;

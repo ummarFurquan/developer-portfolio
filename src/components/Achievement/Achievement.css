@@ -1,17 +1,17 @@
 .achievement {
     min-height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 3rem;
 }
 
 .achievement-body {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
     flex: 0.4;
     width: 90%;
 }
@@ -32,9 +32,9 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     width: 100%;
     flex: 0.6;
     
@@ -42,72 +42,41 @@
 
 .achievement-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    height: 240px;
-    padding: 1.5rem;
-    border-radius: 20px;
-    margin-bottom: 3.3rem;
-    margin-left: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
     transition: background-color 200ms ease-in-out;
-    width: 100%;
+    width: 50%;
     position: relative;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 2.9) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 16px -5px, rgba(0, 0, 0, 0.3) 0px 6px 10px -5px;
 }
 
-.achievement-card:hover{
+.achievement-card:hover {
     cursor: pointer;
 }
 
 .achievecard-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    width: 65%;
-   
-}
-
-.achievecard-details2 {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
     align-items: center;
-    font-family: var(--primaryFont);
-    font-size: 18px;
-    position: absolute;
-    bottom: 7px;
-    left: 25px;
-}
-
-.achievecard-details2 h5 {
-   width: 50%;
-}
-
-.achievecard-field {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.achievecard-field svg {
-    margin-right: 6px;
+    justify-content: center;
 }
 
 .achievecard-details1 h2 {
     font-family: var(--primaryFont);
     font-weight: 500;
-    font-size: 1.225rem;
-    line-height: 110%;
-    margin-bottom: 6px;
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-bottom: 0.5rem;
 }
 
 .achievecard-details1 p {
-    font-size: 1.10rem;
+    font-size: 0.85rem; /* Adjust font size for smaller screens */
     font-family: Roboto;
     font-weight: 400;
+    margin-bottom: 0.5rem;
 }
 
 .achievecard-imgcontainer {

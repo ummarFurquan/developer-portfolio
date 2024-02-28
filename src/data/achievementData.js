@@ -1,18 +1,50 @@
 export const achievementData = {
-    bio : "Actuarial Certifications from the Society of Actuaries (SOA).",
-    achievements : [
+    bio: "Actuarial Certifications from the Society of Actuaries (SOA).",
+    achievements: [
         {
-            id : 1,
-            certificate1: 'ExamP - profitability',
-            certificate2: 'ExamFM - Financial Mathematics',
-            certificate3: 'ExamSRM - Statistical Risk Modelling',
-            certificate4: 'ExamIFM - Financial Engineering',
-            certificate5: 'ExamLTAM - Long-term Acturial Mathematics',
-            certificate6: 'Exam STAM - Short-Term Actuarial Mathematics',
-            certificate7: 'VEEMATHSTATS - Mathematical Statistics',
-            certificate8: 'VEEACCTFIN - Accounting and Finance',
-            certiicate9: 'VEEECON - Economics'
+            id: 1,
+            name: 'ExamP',
+            desc: 'Probability'
+        },
+        {
+            id: 2,
+            name: 'ExamFM',
+            desc: 'Financial Mathematics'
+        },
+        {
+            id: 3,
+            name: 'ExamSRM',
+            desc: 'Statistical Risk Modelling'
+        },
+        {
+            id: 4,
+            name: 'ExamIFM',
+            desc: 'Financial Engineering'
+        },
+        {
+            id: 5,
+            name: 'ExamLTAM',
+            desc: 'Long-term Actuarial Mathematics'
+        },
+        {
+            id: 6,
+            name: 'ExamSTAM',
+            desc: 'Short-Term Actuarial Mathematics'
+        },
+        {
+            id: 7,
+            name: 'VEEMATHSTATS',
+            desc: 'Mathematical Statistics'
+        },
+        {
+            id: 8,
+            name: 'VEEACCTFIN',
+            desc: 'Accounting and Finance'
+        },
+        {
+            id: 9,
+            name: 'VEEECON',
+            desc: 'Economics'
         }
-
     ]
-}
+};
