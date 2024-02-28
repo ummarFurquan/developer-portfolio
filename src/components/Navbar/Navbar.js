@@ -2,9 +2,10 @@ import React, { useContext, useState } from "react";
 import { NavHashLink as NavLink } from "react-router-hash-link";
 import Fade from "react-reveal/Fade";
 import { IoMenuSharp, IoHomeSharp } from "react-icons/io5";
-import { HiDocumentText } from "react-icons/hi";
 import { MdPhone } from "react-icons/md";
 import { FaUser} from "react-icons/fa";
+import { FaPaintBrush } from "react-icons/fa";
+import { IoSchoolSharp } from "react-icons/io5";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
@@ -21,6 +22,9 @@ function Navbar() {
   const handleDrawerOpen = () => {
     setOpen(true);
     setHandleDrawer();
+    if (typeof window != 'undefined' && window.document) {
+      document.body.style.overflow = 'hidden';
+    }
   };
 
   const handleDrawerClose = () => {
@@ -46,18 +50,19 @@ function Navbar() {
       },
     },
     MuiDrawer: {
-      padding: "0em 1.8em",
+      padding: "0em 1.9em",
       width: "14em",
       fontFamily: " var(--primaryFont)",
       fontStyle: " normal",
       fontWeight: " normal",
-      fontSize: " 24px",
+      fontSize: " 25px",
       background: theme.secondary,
-      overflow: "hidden",
+      overflow: "scroll",
       borderTopRightRadius: "40px",
       borderBottomRightRadius: "40px",
       [t.breakpoints.down("sm")]: {
         width: "12em",
+        overflow:'scroll'
       },
     },
     closebtnIcon: {
@@ -82,8 +87,8 @@ function Navbar() {
       borderRadius: "78.8418px",
       background: theme.secondary,
       color: theme.primary,
-      width: "85%",
-      height: "60px",
+      width: "100%",
+      height: "55px",
       display: "flex",
       alignItems: "center",
       justifyContent: "space-evenly",
@@ -194,16 +199,8 @@ function Navbar() {
             <Fade left>
               <NavLink to="/#education" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
-                  <HiDocumentText className={classes.drawerIcon} />
+                  <IoSchoolSharp className={classes.drawerIcon} />
                   <span className={classes.drawerLinks}>Education</span>
-                </div>
-              </NavLink>
-            </Fade>
-            <Fade left>
-              <NavLink to="/" smooth={true} spy="true" duration={2000}>
-                <div className={classes.drawerItem}>
-                  <MdPhone className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Experience</span>
                 </div>
               </NavLink>
             </Fade>
@@ -217,7 +214,47 @@ function Navbar() {
               </NavLink>
             </Fade>
 
-           
+            <Fade left>
+              <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
+                <div className={classes.drawerItem}>
+                  <MdPhone className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Contact</span>
+                </div>
+              </NavLink>
+            </Fade>
+
+            <Fade left>
+              <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
+                <div className={classes.drawerItem}>
+                  <MdPhone className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Contact</span>
+                </div>
+              </NavLink>
+            </Fade>
+            <Fade left>
+              <NavLink to="/" smooth={true} spy="true" duration={2000}>
+                <div className={classes.drawerItem}>
+                  < FaPaintBrush className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Art</span>
+                </div>
+              </NavLink>
+            </Fade>
+            <Fade left>
+              <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
+                <div className={classes.drawerItem}>
+                  <MdPhone className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Contact</span>
+                </div>
+              </NavLink>
+            </Fade>
+            <Fade left>
+              <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
+                <div className={classes.drawerItem}>
+                  <MdPhone className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Contact</span>
+                </div>
+              </NavLink>
+            </Fade>
           </div>
         </div>
       </Drawer>
