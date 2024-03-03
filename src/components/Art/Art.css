@@ -1,63 +1,97 @@
-.container{
-    background-color: #faf0e6;
-}
-.heading-1{
+.heading-1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    margin-bottom: 40px;
-    font-size: 2.0rem;
+    flex-direction: column;
     font-family: var(--primaryFont);
-    
+    font-size: 30px;
+    margin: 10px;
 }
-.image-description{
-    font-size: 1.0rem;
+
+.heading-1 h4 {
+    font-size: 1.75rem;
     font-family: var(--primaryFont);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-weight: 400;
 }
+
 .swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+    margin-top: 25px;
+    width: 60%;
+    height: 60%;
 }
-
-
 
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 50%;
+    background-size: cover;
+    aspect-ratio: inherit;
+    
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    .heading-1 {
-        font-size: 1.5rem; /* Adjust the font size for smaller screens */
+/* Mobile Phones */
+@media screen and (max-width: 576px) {
+    .swiper {
+        width: 90%; /* Adjust width for smaller screens */
+        height: 90%; /* Adjust height for smaller screens */
     }
-    
-    .image-description {
-        margin: 9px;
-        font-size: 0.9rem; /* Adjust the font size for smaller screens */
+
+    .swiper-slide img {
+        width: 80%; /* Adjust image width for smaller screens */
+    }
+
+    .heading-1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .heading-1 h4 {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
     }
 }
 
-/* Media query for even smaller screens, like mobile phones */
-@media screen and (max-width: 480px) {
-    .heading-1 {
-        font-size: 1.2rem; /* Further adjust the font size for smaller screens */
+/* Tablets */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .swiper {
+        width: 70%; /* Adjust width for tablets */
+        height: 70%; /* Adjust height for tablets */
     }
-    
-    .image-description {
-        margin: 9px;
-        font-size: 0.9rem; /* Further adjust the font size for smaller screens */
+
+    .swiper-slide img {
+        width: 70%; /* Adjust image width for tablets */
+    }
+
+    .heading-1 {
+        font-size: 24px; /* Adjust font size for tablets */
+    }
+
+    .heading-1 h4 {
+        font-size: 1.5rem; /* Adjust font size for tablets */
+    }
+}
+
+/* Laptops and Desktops */
+@media screen and (min-width: 769px) {
+    .swiper {
+        width: 60%; /* Adjust width for larger screens */
+        height: 60%; /* Adjust height for larger screens */
+    }
+
+    .swiper-slide img {
+        width: 50%; /* Adjust image width for larger screens */
+    }
+
+    .heading-1 {
+        font-size: 30px; /* Adjust font size for larger screens */
+    }
+
+    .heading-1 h4 {
+        font-size: 1.75rem; /* Adjust font size for larger screens */
     }
 }

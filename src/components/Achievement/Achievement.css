@@ -185,7 +185,6 @@
     }
     
 }
-
 @media screen and (max-width: 600px) {
     .achievement{
         padding: 1rem;
@@ -207,6 +206,26 @@
     .achievecard-imgcontainer > img {
         width: 70px;
         height: 60px;
+    }
+
+}
+@media screen and (max-width: 390px) {
+
+    .achievement-body h4 {
+        font-size: 1.5rem;
+    }
+
+    .achievecard-details1 p {
+        font-size: 0.95rem;
+    }
+    .achievecard-imgcontainer > img {
+        width: 70px;
+        height: 60px;
+    }
+    .achievement-cards {
+        margin-left: 5%;
+
+        
     }
 
 }

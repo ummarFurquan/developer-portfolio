@@ -2,15 +2,20 @@ import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-coverflow";
+import "swiper/css/effect-fade";
 import "swiper/css/pagination";
+import 'swiper/css/pagination';
 
 import "./Art.css";
 
+
+import  image1 from '../../assets/Art/art1.jpg'
+import image2 from '../../assets/Art/project2.jpg'
+import image3 from '../../assets/Art/art section 3.jpg'
+
 // import required modules
-import { EffectCoverflow } from "swiper/modules";
+import { EffectFade, Navigation, Pagination } from "swiper/modules";
 
 export default function Art() {
   return (
@@ -18,86 +23,36 @@ export default function Art() {
       <div className="container" id="art">
         <div className="heading-1">
           <h1>Art Work</h1>
+            <h6>Welcome to my gallery of original creations</h6>
         </div>
         <Swiper
-          effect={"coverflow"}
-          grabCursor={true}
-          centeredSlides={true}
-          slidesPerView={"auto"}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
-          modules={[EffectCoverflow]}
+        spaceBetween={30}
+        effect={'fade'}
+        navigation={true}
+        pagination={{
+          clickable:true,
+        }}
+          modules={[EffectFade,Navigation,Pagination]}
           className="mySwiper"
         >
           <SwiperSlide>
             <img
-              src="https://swiperjs.com/demos/images/nature-1.jpg"
+              src={image3}
               alt="img-1"
             />
-            <h5 className="image-description">Sample Text</h5>
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://swiperjs.com/demos/images/nature-2.jpg"
+              src={image2}
               alt="img-1"
             />
-            <h5 className="image-description">Sample Text</h5>
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://swiperjs.com/demos/images/nature-3.jpg"
+              src={image1}
               alt="img-1"
             />
-            <h5 className="image-description">Sample Text</h5>
           </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="https://swiperjs.com/demos/images/nature-4.jpg"
-              alt="img-1"
-            />
-            <h5 className="image-description">Sample Text</h5>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="https://swiperjs.com/demos/images/nature-5.jpg"
-              alt="img-1"
-            />
-            <h5 className="image-description">Sample Text</h5>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="https://swiperjs.com/demos/images/nature-6.jpg"
-              alt="img-1"
-            />
-            <h5 className="image-description">Sample Text</h5>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="https://swiperjs.com/demos/images/nature-7.jpg"
-              alt="img-1"
-            />
-            <h5 className="image-description">Sample Text</h5>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="https://swiperjs.com/demos/images/nature-8.jpg"
-              alt="img-1"
-            />
-            <h5 className="image-description">Sample Text</h5>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="https://swiperjs.com/demos/images/nature-9.jpg"
-              alt="img-1"
-            />
-            <h5 className="image-description">Sample Text</h5>
-          </SwiperSlide>
-      
         </Swiper>
       </div>
     </>
