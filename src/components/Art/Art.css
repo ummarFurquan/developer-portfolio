@@ -1,6 +1,5 @@
 .container{
-    background-color: #f5f5dc;
-    
+    background-color: #faf0e6;
 }
 .heading-1{
     display: flex;
@@ -24,6 +23,8 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+
 
 .swiper-slide {
   background-position: center;

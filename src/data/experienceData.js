@@ -1,23 +1,51 @@
+import ey from '../assets/Experience/ey.jpg'
+import mercer from '../assets/Experience/mercer.png'
+import mcdough from '../assets/Experience/george town mc dough.png'
+import analytics from '../assets/Experience/georgetown_ms_dsan_logo.jpg'
+import lloyd from '../assets/Experience/mercer.png'
+
+
+
 export const experienceData = [
     {
         id: 1,
-        company: 'Ernst and Youngs (QUEST), Washington D.C.',
+        company: 'Ernst & Young (QUEST)',
         jobtitle: 'Statistical Staff Analyst',
         startYear: 'Jun 2022 ',
-        endYear: ' Current'
+        endYear: ' Current',
+        image : ey
     },
     {
         id: 2,
-        company: 'Mercer; Marh & Mclennan Group,Mumbai',
-        jobtitle: 'Assistant Manager (WAS)',
-        startYear: '2019 ',
-        endYear: ' 2021'
+        company: 'Georgetown University McDonough School of Business',
+        jobtitle: 'Teaching Assistant',
+        startYear: 'Jan - 2022',
+        endYear: 'May - 2022',
+        image: mcdough
     },
     {
         id: 3,
-        company: 'Jardine Lloyd Thompson, Mumbai',
-        jobtitle: 'Acturial Analyst',
-        startYear: 'Mar-2018 ',
-        endYear: ' Sep-2019'
+        company: 'Georgetown University MS Data Science and Analytics',
+        jobtitle: 'Lead Teaching Assistant',
+        startYear: 'Jan - 2022',
+        endYear: 'May - 2022',
+        image: analytics
     },
+    {
+        id: 4,
+        company: 'Mercer',
+        jobtitle: 'Assistant Manager',
+        startYear: 'Sep - 2019',
+        endYear: 'Mar - 2021',
+        image: mercer
+    },
+    {
+        id: 5,
+        company: 'Mercer ( Jardine Lloyd Thompson) ',
+        jobtitle: 'Acturial Analyst',
+        startYear: 'Mar - 2019',
+        endYear: 'Sep - 2021',
+        image: lloyd
+    },
+
 ]

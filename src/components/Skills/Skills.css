@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: var(--primaryFont);
 }
 
 .skillsHeader h2 {
@@ -20,6 +21,7 @@
     font-weight: bold;
     font-size: 3.5rem;
     text-align: center;
+    font-family: var(--primaryFont);
 }
 
 .skillsContainer {
@@ -34,11 +36,11 @@
 
 .skill--box {
     background: #FAF9F6; 
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 10, 0, 2.9) 10px 9px 10px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) -5px -5px 27px -5px, rgba(0, 10, 0, 0.9) 10px 9px 10px -8px;
     border-radius: 10px;
-    border: 0.2px solid black;
-    width: 160px;
-    height: 160px;
+    /* border: 0.2px solid black; */
+    width: 120px;
+    height: 120px;
     margin: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -58,12 +60,12 @@
 }
 
 .skill--box h3 {
-    font-family: Big Shoulders Text;
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 15px;
     text-align: center;
     margin-top: 1rem;
+    font-family: var(--primaryFont);
 }
 
 

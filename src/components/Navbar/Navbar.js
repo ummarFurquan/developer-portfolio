@@ -203,44 +203,44 @@ function Navbar() {
             </Fade>
 
             <Fade left>
-              <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
+              <NavLink to="/#skills" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
                   <MdPhone className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Contact</span>
+                  <span className={classes.drawerLinks}>Skills</span>
                 </div>
               </NavLink>
             </Fade>
 
             <Fade left>
-              <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
+              <NavLink to="/#experience" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
                   <MdPhone className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Contact</span>
+                  <span className={classes.drawerLinks}>Experience</span>
                 </div>
               </NavLink>
             </Fade>
 
             <Fade left>
-              <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
+              <NavLink to="/#projects" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
                   <MdPhone className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Contact</span>
+                  <span className={classes.drawerLinks}>Projects</span>
                 </div>
               </NavLink>
             </Fade>
             <Fade left>
-              <NavLink to="/" smooth={true} spy="true" duration={2000}>
+              <NavLink to="/#certifications" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
-                  < FaPaintBrush className={classes.drawerIcon} />
+                  <MdPhone className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Actuarial Certification</span>
+                </div>
+              </NavLink>
+            </Fade>
+            <Fade left>
+              <NavLink to="/#art" smooth={true} spy="true" duration={2000}>
+                <div className={classes.drawerItem}>
+                  <FaPaintBrush  className={classes.drawerIcon} />
                   <span className={classes.drawerLinks}>Art</span>
-                </div>
-              </NavLink>
-            </Fade>
-            <Fade left>
-              <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
-                <div className={classes.drawerItem}>
-                  <MdPhone className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Contact</span>
                 </div>
               </NavLink>
             </Fade>

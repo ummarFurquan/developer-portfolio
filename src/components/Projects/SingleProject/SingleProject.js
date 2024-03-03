@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 
 import "./SingleProject.css";
 
-function SingleProject({ id, name, desc, tags, code,  theme }) {
+function SingleProject({ id, name, desc, tags, code, theme, image}) {
   const useStyles = makeStyles((t) => ({
     iconBtn: {
       display: "flex",
@@ -43,10 +43,11 @@ function SingleProject({ id, name, desc, tags, code,  theme }) {
         <div className="projectContent">
           <h2
             id={name.replace(" ", "-").toLowerCase()}
-            style={{ color: 'white' }}
+            style={{ color: "white" }}
           >
             {name}
           </h2>
+          <img src={image} alt={name} />
           <div className="project--showcaseBtn">
             <a
               href={code}

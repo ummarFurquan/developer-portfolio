@@ -281,7 +281,7 @@ function Contacts() {
             </div>
           </div>
         </div>
-        <img src={theme.contactsimg} alt="contacts" className="contacts--img" />
+        {/* <img src='' alt="contacts" className="contacts--img" /> */}
       </div>
       <ToastContainer
         position="top-center"

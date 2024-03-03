@@ -3,14 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Fade from 'react-reveal/Fade';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
-
-
-import expImgWhite from '../../assets/svg/experience/expImgWhite.svg'
-import expImgBlack from '../../assets/svg/experience/expImgBlack.svg'
-
 import './Experience.css'
 
-function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
+function ExperienceCard({id, company, jobtitle, startYear, endYear, image}) {
 
     const { theme } = useContext(ThemeContext);
 
@@ -31,13 +26,13 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
         
         <Fade bottom>
             <div key={id} className={`experience-card ${classes.experienceCard}`}>
-                <div className="expcard-img" style={{backgroundColor: theme.primary}}>
-                    <img src={theme.type === 'light' ? expImgBlack : expImgWhite} alt="" />
+                <div className="expcard-img">
+                    <img src= {image} alt="" />
                 </div>
                 <div className="experience-details">
-                    <h6 style={{color: theme.primary}}>{startYear}-{endYear}</h6>
-                    <h4 style={{color: theme.tertiary}}>{jobtitle}</h4>
-                    <h5 style={{color: theme.tertiary80}}>{company}</h5>
+                    <h6 style={{color: 'white'}}>{startYear}-{endYear}</h6>
+                    <h4 style={{color: 'white'}}>{company}</h4>
+                    <h5 style={{color: 'white'}}>{jobtitle}</h5>
                 </div>
             </div>
         </Fade>   

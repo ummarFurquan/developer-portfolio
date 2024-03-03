@@ -1,40 +1,31 @@
+import project1 from '../assets/Projects/autism.jpg'
+import project3 from '../assets/Projects/political.jpg'
+import project2 from '../assets/Projects/data.jpg'
+
 
 export const projectsData = [
     {
         id: 1,
         projectName: 'Simplifying Autism Spectrum Disorder Screening',
-        projectDesc: 'This project aims to build an employee management system that consolidates all information of a company',
+        projectDesc: 'Determining top characteristics for determining ASD traits using Logistic Regression.',
         tags: ['React', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        code: 'https://github.com/AtishaRajpurohit/Simplifying_ASD_Screening',
+        image: project1
     },
     {
         id: 2,
         projectName: 'Data Visualization to help Retail Investors',
-        projectDesc: 'This project is a railway tracking system that allows users to obtain relevant information about train timing.',
+        projectDesc: 'Data Visualisation to simplify technical and fundamental analyses for Retail Stock Selection',
         tags: ['Django', 'Tailwind CSS'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        code: 'https://github.com/AtishaRajpurohit/DataVisualisation_StockAnalysis',
+        image: project2
     },
     {
         id: 3,
-        projectName: 'News Classification as per Political leaning',
-        projectDesc: 'Weather forecast systems and applications predict weather conditions based on multiple parameters.',
+        projectName: 'Political Reddit Data Analysis',
+        projectDesc: 'Analysing Reddit data to assess the political environments for Democrats and Republicans',
         tags: ['Django', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        code: 'https://github.com/AtishaRajpurohit/political_analysis_reddit_data',
+        image: project3
     },
 ]
-
-
-// Do not remove any fields.
-// Leave it blank instead as shown below
-
-/* 
-{
-    id: 1,
-    projectName: 'Car Pooling System',
-    projectDesc: '',
-    tags: ['Flutter', 'React'],
-    code: '',
-    demo: '',
-    image: ''
-}, 
-*/

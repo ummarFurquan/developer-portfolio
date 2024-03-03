@@ -25,7 +25,7 @@ function AchievementCard({ certificate, description }) {
         <div className="achievecard-content">
           <div className="achievecard-details1">
             <h2 style={{ color: 'white' }}>{certificate}</h2>
-            <p style={{ color: 'white' }}>{description}</p>
+            <p style={{ color: 'white',  fontFamily: "var(--primaryFont)" }}>{description}</p>
           </div>
         </div>
       </div>
