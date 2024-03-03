@@ -21,11 +21,11 @@ function AchievementCard({ certificate, description }) {
 
   return (
     <Fade bottom>
-      <div className={`achievement-card ${classes.achievementCard}`} style={{ backgroundColor: '#28282B' }}>
+      <div className={`achievement-card ${classes.achievementCard}`}>
         <div className="achievecard-content">
           <div className="achievecard-details1">
-            <h2 style={{ color: 'white' }}>{certificate}</h2>
-            <p style={{ color: 'white',  fontFamily: "var(--primaryFont)" }}>{description}</p>
+            <h2 style={{ color: 'black' }}>{certificate}</h2>
+            <p style={{ color: 'black' }}>{description}</p>
           </div>
         </div>
       </div>

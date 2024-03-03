@@ -23,7 +23,7 @@
   object-fit:cover;
   border-radius: 50%;
   box-shadow: 0px 0px 30px rgba(200, 183, 183, 0.2);
-  transition: opacity 0.3s;
+  transition: opacity 0.2s;
 }
 
 .landing--container-left {

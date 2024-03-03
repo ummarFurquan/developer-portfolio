@@ -26,15 +26,15 @@ function EducationCard({ id, institution, course, startYear, endYear }) {
     return (
         <Fade bottom>
     
-            <div key={id} className={`education-card ${classes.educationCard}`} style={{backgroundColor:'#28282B', marginBottom:'40px'}} >
+            <div key={id} className={`education-card ${classes.educationCard}`} >
                 <div className="educard-img" style={{backgroundColor: theme.primary}}>
-                    <img src={theme.type === 'dark' ? eduImgBlack : eduImgWhite} alt="" />
+                    <img src={eduImgWhite} alt="" />
                 </div>
                 <div className="education-details">
-                    <h6 style={{color: 'white'}}>{startYear}-{endYear}</h6>
-                    <h2 style={{color: 'white'}}>{institution}</h2>
+                    <h6 style={{color: 'black'}}>{startYear}-{endYear}</h6>
+                    <h2 style={{color: 'black'}}>{institution}</h2>
                     <span/>
-                    <h4 style={{color: 'white'}}>{course}</h4>
+                    <h4 style={{color: 'black'}}>{course}</h4>
                 </div>
             </div>
         </Fade>        

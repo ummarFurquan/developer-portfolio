@@ -93,15 +93,6 @@ function Landing() {
                 />
               </a>
             )}
-            {socialsData.twitter && (
-              <a href={socialsData.twitter} target="_blank" rel="noreferrer">
-                <FaTwitter
-                  className="landing--social"
-                  style={{ color: 'black'}}
-                  aria-label="Twitter"
-                />
-              </a>
-            )} 
           </div>
         </div>
         <img

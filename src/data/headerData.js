@@ -3,7 +3,7 @@ import image from '../assets/Profile/image.jpg'
 export const headerData = {
     name: 'Atisha Rajpurohit',
     title: "Data Analyst and Finance",
-    desciption:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint molestias corporis quisquam voluptatum molestiae est debitis, sit delectus numquam commodi modi veritatis veniam aliquid quia! Quae praesentium unde voluptas nostrum?",
+    desciption:"Combining statistical and actuarial skills with a creative flair, I approach data science with an artistic perspective, crafting innovative solutions and driving meaningful impact through analytics.",
     image: image,
     resumePdf: resume
 }
