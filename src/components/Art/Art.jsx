@@ -13,6 +13,7 @@ import "./Art.css";
 import  image1 from '../../assets/Art/art1.jpg'
 import image2 from '../../assets/Art/project2.jpg'
 import image3 from '../../assets/Art/art section 3.jpg'
+import bgImg from '../../assets/Art/background image.png'
 
 // import required modules
 import { EffectFade, Navigation, Pagination } from "swiper/modules";
@@ -23,8 +24,13 @@ export default function Art() {
       <div className="container" id="art">
         <div className="heading-1">
           <h1>Art Work</h1>
-            <h6>Welcome to my gallery of original creations</h6>
+          <div className="desc">
+            <h6>Welcome to my gallery of original creations</h6></div>
         </div>
+        <div>
+          <div className="bg-img">
+            <img src={bgImg} alt=" " />
+          </div>
         <Swiper
         spaceBetween={30}
         effect={'fade'}
@@ -54,7 +60,9 @@ export default function Art() {
             />
           </SwiperSlide>
         </Swiper>
+        </div>
       </div>
+
     </>
   );
 }

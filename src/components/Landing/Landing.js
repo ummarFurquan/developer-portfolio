@@ -9,7 +9,6 @@ import { headerData } from "../../data/headerData";
 import { socialsData } from "../../data/socialsData";
 
 import {
-  FaTwitter,
   FaLinkedin,
   FaGithub
 } from "react-icons/fa";

@@ -1,5 +1,5 @@
 .education {
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .education-body {
@@ -42,6 +42,10 @@
     border-radius: 20px;
     margin-bottom: 1.0rem;
     transition: background-color 200ms ease-in-out;
+}
+.education-card:hover{
+    scale: 1.01;
+    cursor: pointer;
 }
 
 .educard-img {
