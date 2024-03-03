@@ -51,7 +51,7 @@
 
 .achievement-card:hover {
     cursor: pointer;
-    scale: 1.01
+    scale: 1.01;
 }
 
 .achievecard-content {
