@@ -41,7 +41,7 @@
     padding: 1.5rem;
     border-radius: 20px;
     margin-bottom: 1.0rem;
-    transition: background-color 200ms ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 }
 .education-card:hover{
     scale: 1.01;

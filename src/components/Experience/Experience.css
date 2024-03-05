@@ -44,6 +44,7 @@
 
 .experience-card:hover {
     background-color: var(--primary50);
+    scale: 1.03;
 }
 
 .expcard-img {
