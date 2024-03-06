@@ -69,7 +69,7 @@
 }
 
 .education-details > h6 {
-    font-family: 'Garamond';
+    font-family: var(--primaryFont);
     font-size: 0.95rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -142,7 +142,7 @@
     .education-card {
         padding: 1rem;
         margin-bottom: 1.0rem;
-        height: 150px;
+        height: 190px;
     }
     .educard-img {
         border-radius: 50%;
@@ -173,6 +173,11 @@
     .education-description > h1{
         font-size: 2.5rem;
     }
+    .education-card {
+        padding: 1rem;
+        margin-bottom: 1.0rem;
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -186,7 +191,6 @@
         padding: 0rem;
         margin-bottom: 1.0rem;
         height: 200px;
-        overflow: scroll;
     }
 
 
