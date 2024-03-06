@@ -1,5 +1,5 @@
 .experience {
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .experience-body {
@@ -40,6 +40,7 @@
     border-radius: 20px;
     margin-bottom: 1.5rem;
     transition: background-color 200ms ease-in-out;
+    transition: scale 200ms ease-in-out;
 }
 
 .experience-card:hover {
