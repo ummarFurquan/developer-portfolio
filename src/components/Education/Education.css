@@ -41,7 +41,7 @@
     padding: 1.5rem;
     border-radius: 20px;
     margin-bottom: 1.0rem;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2ms ease-in-out;
 }
 .education-card:hover{
     scale: 1.01;
@@ -175,11 +175,20 @@
 }
 
 @media screen and (max-width: 400px) {
+      
 
 }
   
 @media only screen and (min-device-width: 320px) and (max-device-width: 
-  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+  480px) and (-webkit-device-pixel-ratio: 2)  {
+    .education-card {
+        padding: 0rem;
+        margin-bottom: 1.0rem;
+        height: 200px;
+        overflow: scroll;
+    }
+
+
 
 }
 

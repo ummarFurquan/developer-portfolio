@@ -14,7 +14,6 @@
     bottom: 0;
     width: 280px;
     pointer-events: none;
-    mix-blend-mode:multiply;
 }
 
 .contacts--container {
@@ -38,8 +37,8 @@
 .contacts-body {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 100%;
 }
 
