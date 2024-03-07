@@ -8,7 +8,7 @@ export const projectsData = [
         id: 1,
         projectName: 'Simplifying Autism Spectrum Disorder Screening',
         projectDesc: 'Determining top characteristics for determining ASD traits using Logistic Regression.',
-        tags: ['React', 'CSS', 'Material Ui'],
+        tags: ['Tidyverse', 'Sklearn' ],
         code: 'https://github.com/AtishaRajpurohit/Simplifying_ASD_Screening',
         image: project1
     },
@@ -16,7 +16,7 @@ export const projectsData = [
         id: 2,
         projectName: 'Data Visualization to help Retail Investors',
         projectDesc: 'Data Visualisation to simplify technical and fundamental analyses for Retail Stock Selection',
-        tags: ['Django', 'Tailwind CSS'],
+        tags: ['Tidyverse', 'CSS','Plotly, Ggplot'],
         code: 'https://github.com/AtishaRajpurohit/DataVisualisation_StockAnalysis',
         image: project2
     },
@@ -24,7 +24,7 @@ export const projectsData = [
         id: 3,
         projectName: 'Political Reddit Data Analysis',
         projectDesc: 'Analysing Reddit data to assess the political environments for Democrats and Republicans',
-        tags: ['Django', 'CSS', 'Material Ui'],
+        tags: ['AWS'],
         code: 'https://github.com/AtishaRajpurohit/political_analysis_reddit_data',
         image: project3
     },
