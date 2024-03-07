@@ -10,11 +10,18 @@ import sequel from '../assets/svg/skills/sql-database-generic.svg'
 import tableau from '../assets/svg/skills/tableau-icon-svgrepo-com.svg'
 import minitab from '../assets/svg/skills/Minitab.svg'
 import excel from '../assets/svg/skills/excel-svgrepo-com.svg'
+import azure from '../assets/svg/skills/Azure.svg'
+import sclearn from '../assets/svg/skills/scikit-learn.svg'
+import keras from '../assets/svg/skills/Keras.svg'
+import tensorFlow from '../assets/svg/skills/TensorFlow.svg'
+import googlecloud from '../assets/svg/skills/Gcloud.svg'
+import ggplot from '../assets/svg/skills/ggplot.svg'
+import matploblib from '../assets/svg/skills/Matplotlib.svg'
+import plotly from '../assets/svg/skills/plotly.svg'
 
 import github from '../assets/svg/skills/github.svg'
 import jupyter from '../assets/svg/skills/jupyter-ar21.svg'
 import Vscode from '../assets/svg/skills/visual-studio-code-icon.svg'
-
 import aws from '../assets/svg/skills/icons8-amazon-web-services-144.svg'
 export const skillsImage = (skill) => {
     const skillID = skill.toLowerCase();
@@ -26,7 +33,6 @@ export const skillsImage = (skill) => {
             return Vscode
         case 'jupyter':
             return jupyter
-
         case 'github':
             return github
         case 'sql':
@@ -52,7 +58,23 @@ export const skillsImage = (skill) => {
         case 'numpy':
             return numpy;
         case 'python':
-            return python
+            return python;
+        case 'azure':
+            return azure;
+        case 'sklearn':
+            return sclearn;
+        case 'keras':
+            return keras;
+        case 'tensor flow':
+            return tensorFlow;
+        case 'google cloud':
+            return googlecloud;
+        case 'ggplot':
+            return ggplot;
+        case 'matplotlib':
+            return matploblib;
+        case 'plotly':
+            return plotly
         default:
             break;
     }

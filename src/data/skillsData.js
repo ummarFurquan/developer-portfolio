@@ -14,6 +14,14 @@
     'Jupyter',
     'Vscode',
     'Github',
-    'AWS'
+    'AWS',
+    'Azure',
+    'Sklearn',
+    'Keras',
+    'Tensor Flow',
+    'Google Cloud',
+    'ggplot',
+    'Matplotlib',
+    'Plotly'
 ]
 
