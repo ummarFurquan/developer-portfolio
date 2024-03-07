@@ -46,12 +46,12 @@
     margin-bottom: 1.5rem;
     transition: background-color 200ms ease-in-out;
     position: relative;
-    transition: 0.3 ease-in-out;
+    transition: 0.125s ease-in-out;
 }
 
 .achievement-card:hover {
     cursor: pointer;
-    scale: 1.01;
+    scale: 1.04;
 }
 
 .achievecard-content {
