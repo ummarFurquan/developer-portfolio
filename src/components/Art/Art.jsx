@@ -15,7 +15,6 @@ import image2 from '../../assets/Art/project2.jpg'
 import image3 from '../../assets/Art/art section 3.jpg'
 import bgImg from '../../assets/Art/background image.png'
 
-// import required modules
 import { EffectFade, Navigation, Pagination } from "swiper/modules";
 
 export default function Art() {

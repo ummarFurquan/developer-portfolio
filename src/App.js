@@ -10,8 +10,6 @@ import './App.css'
 function App() {
 
 
-  console.log = console.warn = console.error = () => {};
-
   return (
     <div className="app">
       <Router>
