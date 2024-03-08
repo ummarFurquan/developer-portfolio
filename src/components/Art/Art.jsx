@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import "./Art.css";
 
 
-import  image1 from '../../assets/Art/art1.jpg'
+import  image1 from '../../assets/Art/art.jpg'
 import image2 from '../../assets/Art/project2.jpg'
 import image3 from '../../assets/Art/art section 3.jpg'
 import bgImg from '../../assets/Art/background image.png'
