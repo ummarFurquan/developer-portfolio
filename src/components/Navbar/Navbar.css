@@ -56,9 +56,6 @@
 
 
 @media (max-width:600px) {
-    .navbar {
-        overflow: scroll;
-    }
     .nav-menu{
         color: var(--primary-2);
     }
@@ -78,7 +75,6 @@
   480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
     .navbar {
         height: 5rem;
-        overflow: scroll;
     }
     .navbar--container {
         padding: 0 1rem;
